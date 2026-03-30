@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crypto Portfolio Tracker | Fuegowolf Fit</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>₿ My Crypto Portfolio</h1>
+      <p>Track your holdings in real time</p>
+    </header>
+
+    <form id="add-form">
+      <select id="coin-select"></select>
+      <input type="number" id="amount" placeholder="Amount owned" step="0.000001" required>
+      <button type="submit">Add to Portfolio</button>
+    </form>
+
+    <div id="portfolio-value" class="value-box"></div>
+    <div id="portfolio-list"></div>
+
+    <button id="clear-portfolio">Clear Portfolio</button>
+  </div>
+
+  <footer>
+    <p>Built with freeCodeCamp JavaScript • CoinGecko API • Fuegowolf Fit</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
